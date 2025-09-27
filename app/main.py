@@ -5,7 +5,7 @@ app = FastAPI()
 
 @app.get("/")
 def read_root():
-    return {"After CI/CD v6 py github copilot"}
+    return {"Did some cleanup in compose.yml"}
 
 @app.get("/api")
 def read_api():
