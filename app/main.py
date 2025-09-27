@@ -5,7 +5,7 @@ app = FastAPI()
 
 @app.get("/")
 def read_root():
-    return {"This is Home route"}
+    return {"This is Home route after CI/CD"}
 
 @app.get("/api")
 def read_api():
