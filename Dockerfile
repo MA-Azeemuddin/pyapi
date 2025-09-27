@@ -1,6 +1,6 @@
 # === Stage 1: Builder
 ARG PYTHON_VERSION=3.13.5
-FROM python:${PYTHON_VERSION}-slim as build
+FROM python:${PYTHON_VERSION}-slim AS build
 
 ENV DEBIAN_FRONTEND=noninteractive
 WORKDIR /app
@@ -21,7 +21,7 @@ RUN python -m pip install --upgrade pip && \
 COPY . .
 
 # === Stage 2: Runtime image
-FROM python:${PYTHON_VERSION}-slim as final
+FROM python:${PYTHON_VERSION}-slim AS final
 
 ENV PYTHONDONTWRITEBYTECODE=1 \
     PYTHONUNBUFFERED=1
