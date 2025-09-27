@@ -1,15 +1,5 @@
 services:
-  pyapi:
+  server:
     build: .
-    container_name: pyapi
-    image: pyapi
-    restart: always
-    networks:
-      - xps-net
-    env_file:
-      - .env
     ports:
       - "3030:3030"
-networks:
-  xps-net:
-    external: true
