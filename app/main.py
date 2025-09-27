@@ -5,7 +5,7 @@ app = FastAPI()
 
 @app.get("/")
 def read_root():
-    return {"This is Home route after CI/CD and no cache"}
+    return {"This is Home route after CI/CD and no cache and git branch main"}
 
 @app.get("/api")
 def read_api():
