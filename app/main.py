@@ -5,7 +5,7 @@ app = FastAPI()
 
 @app.get("/")
 def read_root():
-    return {"Did some cleanup in compose.yml"}
+    return {"running locally"}
 
 @app.get("/api")
 def read_api():
