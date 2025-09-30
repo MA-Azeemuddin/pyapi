@@ -7,4 +7,18 @@ requires-python = ">=3.13"
 dependencies = [
     "fastapi>=0.117.1",
     "uvicorn[standard]>=0.37.0",
+    # PostgreSQL Async DB Driver
+    "asyncpg>=0.30.0",
+    # Environment variable management
+    "python-dotenv>=1.1.1",
+    "pydantic-settings>=2.11.0",
+    # SQLAlchemy Async ORM & Migrations
+    "sqlalchemy[asyncio]>=2.0.43",
+    "alembic>=1.16.5",
+    # For password hashing etc
+    "passlib[argon2]>=1.7.4",
+    "cuid>=0.4",
+    "httpx>=0.28.1",
+    "authlib>=1.6.4",
 ]
+

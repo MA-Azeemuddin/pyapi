@@ -1,4 +1,5 @@
 from fastapi import FastAPI
+from fastapi.responses import FileResponse
 import uvicorn
 
 app = FastAPI()
@@ -14,6 +15,10 @@ def read_api():
 @app.get("/health")
 def read_health():
     return {"status": "healthy"}
+
+@app.get("/favicon.ico")
+def favicon():
+    return FileResponse("favicon.ico")
 
 
 
